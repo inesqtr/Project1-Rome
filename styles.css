@@ -1,0 +1,150 @@
+header {
+    background-image: url("https://cdn.pixabay.com/photo/2014/11/17/05/25/saint-peters-basilica-534336_960_720.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding: 40px 10px;
+    margin:0 0 200px;
+    
+  }
+
+   
+  .title {
+    color:rgb(249, 246, 250);
+    text-align:left;
+    font-family: 'Satisfy', cursive;
+    font-size: 150px;
+    padding-top:10px;
+    
+  
+  }
+  @media (max-width:740px){
+   .title {
+      font-size:100px!important;
+      }
+    }
+    
+
+  @media (max-width:640px){
+  .title {
+      font-size:50px!important;
+    }
+  }
+
+  
+
+
+  @media(max-width:640px) {
+    nav ul {
+      width:100%;
+    
+    }
+   
+  }
+
+    nav a {
+      font-size:30px;
+      font-size:bold;
+      
+       }
+
+  @media (max-width:740px){
+    nav a{
+      font-size:20px;
+      font-weight:bold;
+      }
+    }
+    
+  
+
+  @media (max-width:540px){
+    nav a{
+      font-size:10px;
+      font-weight: bold;
+      
+    }
+  }
+
+  
+ 
+  
+  header li {
+    display:inline-block;
+    width:30%;
+    height:50px;
+    font-family: 'Bitter', serif;
+   
+    
+    
+  }
+  
+  header li a, header li a:hover {
+  color:#FFF;
+  }
+  
+  
+  header ul {
+    display:inline-flex;
+    background-color:#000000;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:20;
+    margin:0;
+    padding:0;
+    width:100%;
+    white-space:nowrap;
+    height:60px;
+    opacity:0.5;
+    transition: all 0.8s;
+    align-items:center;
+    
+  }
+  
+  header ul:hover {
+    opacity:1;
+  }
+
+  /*carousel*/
+
+
+.carousel-inner img {
+  margin: auto; /*Added*/
+  }
+
+  
+/*boostrap cards*/
+
+h2 {
+  font-family:'Bitter', Serif!important;
+  text-align:center;
+  padding-top:100px;
+  
+}
+
+h3{
+  font-family:'Bitter', Serif!important;
+
+}
+
+.btn {
+  float:right;
+  margin-right:300px;
+  
+}
+.horizontalcard{
+  margin-top: 50px;
+  padding:0 50px;
+}
+    
+.card {
+  margin:0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+  
+  footer {
+    display:inline-flex;
+     }
+
+  
