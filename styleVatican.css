@@ -1,0 +1,110 @@
+body {
+    background-color: #eaf6f6;
+    font-family: "Roboto Slab", serif;
+    color: #40514e;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.75em;
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1509644048338-b1556adf4131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: left center;
+    height: 300px;
+    padding: 40px 10px;
+  }
+
+.attractionsTitle{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-align: right;
+    color: #000000;
+    margin-right: 90px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 70px;
+    text-align: right;
+    color: #40514e;
+    margin-right: 90px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+}
+
+h3, a {
+    color:#1a237e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section {
+    display: block;
+    margin: 100px auto;
+    width: 75%;
+    border: 1.5px solid #313131;
+    border-radius: 10px;
+    padding: 5px 40px;
+}
+
+.history, ol {
+    display: block;
+    margin-left: 15px;
+    padding: 20px;
+    text-align: justify;
+}
+
+#topAttractions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.attraction{
+    height: 550px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1d1d0d;
+    color: white;
+    transition: transform .3s cubic-bezier(.26,.8,.91,.91);
+}
+
+.attraction:hover .image{
+    transform: scale(1.2);
+}
+
+.attractionDescription{
+    padding: 0 30px; 
+}
+
+.image {
+    border-radius: 10px 10px 0 0;
+    height: 325px;
+    width: 300px;
+}
+
+.interrogationImg{
+    height: 300px;
+    width: 300px;
+    margin-top:75px;
+    margin-left: 15px;
+    float:left;
+}
+
+#curiosities{
+    overflow: hidden;
+}
+    
+#curiosities .curiositiesList {
+    display:block;
+    margin-left: 400px
+}
