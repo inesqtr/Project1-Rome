@@ -1,99 +1,124 @@
 body {
   width: 100%;
-  background-color:#FFF7D6;
-  margin:none;
+  background-color: #FFF7D6;
+  margin: none;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 header ul {
   display: flex;
   justify-content: space-around;
-  background-color:#160808;
+  background-color: #160808;
   color: white;
-  position:fixed;
-  z-index:20;
-  width:100%;
-  height:60px;
-  opacity:0.9;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 60px;
+  opacity: 0.9;
+  top: 0;
   right: 0;
-  left:0;
-  margin:0;
-  padding:0;
-  align-items:center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: 'Open Sans Condensed', sans-serif !important;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
-header li{
-  color:white;
-  list-style:none;
+header li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
 }
 
 header ul:hover {
-  opacity:1;
+  opacity: 1;
 }
 
-li a:hover {
+li .nav:hover {
   font-weight: bold;
-  color:white;
+  color: white;
   text-decoration: none;
-  font-size:1.3em;
+  font-size: 1.3em;
 }
 
-header li a, header li a:hover {
-  color:#FFF;
+header li .nav, header li .nav:hover {
+  color: #FFF;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 4em;
+  color: #8A2000;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  margin-top: 0px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px;
+  padding: 100px 0;
+  background-color: #D9A173;
+  border-radius: 10px;
+  width: 65%;
 }
 
 form {
   text-align: left;
-  }
-  
-  form label {
-    color: tomato;
-    font-family: "Amatic SC";
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  input {
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 15px;
-    height: 30px;
-    margin-bottom: 10px;
-    outline: none;
-    width: 75%;
-  }
-  
-  textarea {
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 15px;
-    height: 100px;
-    margin-bottom: 10px;
-    outline: none;
-    width: 75%;
-  }
-  
-  .submitButton {
-    background-color: #1a237e;
-    border: 1px solid #1a237e;
-    border-radius: 25px;
-    color: #fff;
-    font-family: "Amatic SC";
-    font-size: 25px;
-    font-weight: bold;
-    margin: 30px auto;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 200ms ease;
-    word-spacing: 5px;
-  }
-  
-  .submitButton:hover {
-    background-color: transparent;
-    border: 2px solid #1a237e;
-    color: #1a237e;
-    cursor: pointer;
-  }
+}
+
+form label {
+  color: #8A2000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input {
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 40px;
+  margin-bottom: 30px;
+  outline: none;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 200px;
+  outline: none;
+  width: 100%;
+}
+
+.submitButton {
+  background-color: #8A2000;
+  border: 1px solid #8A2000;
+  border-radius: 25px;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px auto 0;
+  padding: 15px 30px;
+  text-align: center;
+  transition: all 200ms ease;
+  word-spacing: 6px;
+  align-items: center;
+  display: flex;
+}
+
+.submitButton:hover {
+  background-color: transparent;
+  border: 2px solid #8A2000;
+  color: #8A2000;
+  cursor: pointer;
+  font-size: 30px;
+}
