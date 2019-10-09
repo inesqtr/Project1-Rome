@@ -1,0 +1,19 @@
+{
+  "name": "project1-rome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inesqtr/Project1-Rome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inesqtr/Project1-Rome/issues"
+  },
+  "homepage": "https://github.com/inesqtr/Project1-Rome#readme"
+}
