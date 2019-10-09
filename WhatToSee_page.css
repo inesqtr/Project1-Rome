@@ -49,6 +49,8 @@
     font-family: Lato, sans-serif;
     text-align: justify;
     color: black;
+    padding-bottom: 17px;
+    font-size: 1em;
   }
   h1 {
     font-family: 'Satisfy', cursive;
@@ -70,7 +72,6 @@
   h3 + p {
     color: white;
     text-align: center;
-    padding-bottom: 1.1em;
   }
 
   /*scroll-down menu*/
@@ -92,6 +93,8 @@
     background-color: #1d1d0d;
     border-radius: 0 0 10px 10px;
     box-shadow:3px 0px 12px #160808;
+    padding-bottom: 5px;
+    padding-top:5px;
   }
   
   .thumb {
@@ -127,13 +130,12 @@
     background-color: #D9A173;
     border-radius: 10px;
     width: 100%;
-
   }
   .video iframe, .video object, .video embed {
     width: 70% !important;
     height: 400px !important;
     border-radius: 20px;
-    }
+  }
   
 
   
