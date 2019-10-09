@@ -5,27 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleContactUs.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 
 <body>
-    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE"
-        method="post">
-        <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-            </br>
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-            </br>
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message"
-                placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-                required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <nav>
+            <ul>
+                <!-- Nav bar -->
+                <li><a class="nav" href="whattosee.html" target="_blank">What to see</a></li>
+                <li><a class="nav" href="wheretostay.html" target="_blank">Where to stay</a></li>
+                <li><a class="nav" href="wheretoeat.html" target="_blank">Where to eat</a></li>
+                <li><a class="nav" href="events.html" target="_blank">Events</a></li>
+                <li><a class="nav" href="Contact us.html" target="_blank">Contact us</a></li>
+            </ul>
+        </nav>
+        <h1>Contact us</h1>
+    </header>
+    <section>
+        <form action="mailto:contact@lavieenrome.com" method="post" enctype="text/plain">
+            <label for="nameLabel">Name</label>
+            <br />
+            <input type="text" name="yourName" value="" id="nameLabel" placeholder="Enter your name" />
+            <br />
+            <label for="emailLabel">Email</label>
+            <br />
+            <input type="email" name="yourEmail" value="" id="emailLabel" placeholder="youremail@email.com" />
+            <br />
+            <label for="messageLabel">Message</label>
+            <br />
+            <textarea name="yourMessage" rows="3" cols="50" placeholder="Write your message here."></textarea>
+            <br />
+            <button class="submitButton" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
