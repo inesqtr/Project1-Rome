@@ -1,89 +1,141 @@
 body {
-    background-color: #eaf6f6;
-    font-family: "Roboto Slab", serif;
-    color: #40514e;
-    font-size: 16px;
+    width: 100%;
+    background-color: #FFF7D6;
+    margin: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #160808;
+    color: white;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 60px;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
     margin: 0;
-    line-height: 1.75em;
+    padding: 0;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
-header {
+header li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+header ul:hover {
+    opacity: 1;
+}
+
+li .nav:hover {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header li .nav, header li .nav:hover {
+    color: #FFF;
+}
+
+.titleBackground {
     background-image: url("https://images.unsplash.com/photo-1509644048338-b1556adf4131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: left center;
-    height: 300px;
-    padding: 40px 10px;
-  }
-
-.attractionsTitle{
-    font-family: 'Bitter', serif;
-    font-size: 30px;
-    text-align: right;
-    color: #000000;
-    margin-right: 90px;
-    margin-bottom: 0px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
-h1 {
-    font-family: 'Bitter', serif;
-    font-size: 70px;
+.subtitleAttractions {
+    font-family: 'Satisfy', cursive;
+    color: #8A2000;
+    font-size: 2em;
     text-align: right;
-    color: #40514e;
     margin-right: 90px;
-    margin-top: 100px;
+    padding-top: 120px;
+}
+
+.titleAttractions {
+    font-family: 'Satisfy', cursive;
+    font-size: 6.5em;
+    color: #8A2000;
+    text-align: right;
+    margin-right: 90px;
 }
 
 h2 {
     font-family: 'Bitter', serif;
     font-size: 30px;
+    font-weight: bold;
+    color: #8A2000;
 }
 
 h3, a {
-    color:#1a237e;
+    color: #FFF;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Chivo', cursive;
+    font-size: 1.4em;
 }
 
 section {
     display: block;
     margin: 100px auto;
     width: 75%;
-    border: 1.5px solid #313131;
-    border-radius: 10px;
-    padding: 5px 40px;
 }
 
 .history, ol {
     display: block;
     margin-left: 15px;
-    padding: 20px;
+    padding: 50px;
     text-align: justify;
 }
 
-#topAttractions{
+#topAttractions {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin: 50px auto;
 }
 
-.attraction{
+.attraction {
     height: 550px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 3px 0px 12px #160808;
     background-color: #1d1d0d;
     color: white;
-    transition: transform .3s cubic-bezier(.26,.8,.91,.91);
+    transition: transform .3s cubic-bezier(.26, .8, .91, .91);
 }
 
-.attraction:hover .image{
+.attraction:hover .image {
     transform: scale(1.2);
 }
 
-.attractionDescription{
-    padding: 0 30px; 
+.attractionDescription {
+    padding: 30px 30px;
+}
+
+.attractionDescription:hover {
+    padding: 30px 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .image {
@@ -92,19 +144,24 @@ section {
     width: 300px;
 }
 
-.interrogationImg{
-    height: 300px;
-    width: 300px;
-    margin-top:75px;
-    margin-left: 15px;
-    float:left;
+#curiosities {
+    padding: 20px;
 }
 
-#curiosities{
-    overflow: hidden;
+.interrogationImg {
+    height: 300px;
+    width: 300px;
+    margin-top: 125px;
+    margin-left: 15px;
+    float: left;
 }
-    
+
 #curiosities .curiositiesList {
-    display:block;
-    margin-left: 400px
+    display: block;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+#curiosities li {
+    padding: 5px 0;
 }
