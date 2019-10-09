@@ -1,0 +1,73 @@
+
+
+header {
+  background-image: url("https://cdn.pixabay.com/photo/2014/11/17/05/25/saint-peters-basilica-534336_960_720.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding: 40px;
+  margin:0 0 100px;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+}
+
+
+section {
+  max-width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+section > h2 {
+  margin-bottom:50px;
+}
+
+.title {
+  color:rgb(249, 246, 250);
+  text-align:left;
+  font-family: 'Satisfy', cursive;
+  font-size: 100px;
+  padding-top:5%;
+  padding-left:10%;
+
+}
+
+@media (max-width:740px){
+ .title {
+    font-size:100px!important;
+   
+ }
+}
+  
+
+@media (max-width:640px){
+.title {
+    font-size:50px!important;
+ }
+}
+
+/*carousel*/
+
+
+.carousel-inner img {
+  margin: auto; /*Added*/
+}
+
+.card-img-top {
+  max-height: 890px;
+}
+
+
+/*boostrap cards*/
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  text-align:center;
+  padding-top:100px;
+
+}
+
+h3 {
+  font-family: 'Chivo',cursive !important;
+
+}
+  
