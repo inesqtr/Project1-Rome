@@ -1,11 +1,10 @@
 
 .container {
-    width: 100%;
-    background-color:#FFF7D6;
+    width: 75%;
     margin:none;
   }
 
-  /*Menu*/
+  /*Menu
   
   header ul {
     display: flex;
@@ -44,7 +43,7 @@
     color:#FFF;
     }
 
-  /*END menu*/
+  END menu*/
   p {
     font-family: Lato, sans-serif;
     text-align: justify;
@@ -127,7 +126,6 @@
     margin: 30px auto;
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #D9A173;
     border-radius: 10px;
     width: 100%;
   }
