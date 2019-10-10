@@ -7,104 +7,91 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>La Vie en Rome</title>
 
-    <link href="styles.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link href="assets/css/commons.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo%7CMartel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 </head>
 
-
-
-
 <body>
-
     <header>
         <h1 class="title">La vie en Rome</h1>
 
-
+        <audio class="d-none" id="audio1" controls autoplay loop>
+            <source src="assets/sound/bg_sound.mp3" type="audio/mp3">
+        </audio>
+        <script type="text/JavaScript">
+            // Set audio volume to 20%
+            document.getElementById("audio1").volume = 0.0;
+        </script>
         <nav>
             <ul>
-                <!-- Nav bar -->
-                <li><a class="nav" href="WhatToSee_page.html" target="_blank">What to see</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Where to stay</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Where to eat</a></li>
-                <li><a class="nav" href="#new" target="_blank">Events</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Contact us</a></li>
+                <li class="nav text-center"><a class="active" href="#">Home</a></li>
+                <li class="nav text-center"><a href="whattosee.html" target="_blank">What to see</a></li>
+                <li class="nav text-center"><a href="wheretostay.html" target="_blank">Where to stay</a></li>
+                <li class="nav text-center"><a href="wheretoeat.html" target="_blank">Where to eat</a></li>
+                <li class="nav text-center"><a href="events.html" target="_blank">Events</a></li>
+                <li class="nav text-center"><a href="contactUs.html" target="_blank">Contact us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--carousel-->
-    <section class="carousel-container">
-        <div class=carousel>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block "
-                            src="https://cdn.pixabay.com/photo/2019/06/18/15/32/moor-fountain-4282602_960_720.jpg"
-                            alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block"
-                            src="https://cdn.pixabay.com/photo/2017/12/28/08/18/arch-of-constantine-3044634_960_720.jpg"
-                            alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block"
-                            src="https://cdn.pixabay.com/photo/2017/03/21/01/11/rome-2160788_960_720.jpg"
-                            alt="Third slide">
-                    </div>
 
+
+    <section class=carousel>
+        <h2>“Rome was a poem pressed into service as a city.” - Anotole Broyard, American writer</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block "
+                        src="https://cdn.pixabay.com/photo/2019/06/18/15/32/moor-fountain-4282602_960_720.jpg"
+                        alt="First slide">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+                    <img class="d-block "
+                        src="https://cdn.pixabay.com/photo/2017/12/28/08/18/arch-of-constantine-3044634_960_720.jpg"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="https://cdn.pixabay.com/photo/2017/03/21/01/11/rome-2160788_960_720.jpg"
+                        alt="Third slide">
+                </div>
+
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
 
-
-    <h2 id="new">What's new in Rome</h2>
-
-    <button type="button" class="btn btn-light" data-toggle="button" aria-pressed="false" autocomplete="off">
-        See More...
-    </button>
-
-    <!--bootstrap card with 1 horizontal images-->
-
     <section class="horizontalcard">
-        <div class="card mb-3" style="max-width:1140px;">
+        <h2>What's new in Rome</h2>
+        <div class="card mb-3">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1534430224470-f52e596ced9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        class="card-img" alt="whatsNewinRome">
+                <div class="col-md-2">
+                    <img src="assets/img/photo-1534430224470-f52e596ced9f.jpeg" class="card-img" alt="whatsNewinRome">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <div class="card-body">
-                        <h5 class="card-title">October 2019</h5>
-                        <p class="card-text">Rome in October is one of most beautiful times of the year. The weather
-                            is mostly warm during the day, and comfortably cool at night. We get some rain but
-                            usually not too much. The light still casts warming shadows on all the ochre-colored
-                            buildings.With summer over and the holidays around the corner, October is one of the
-                            liveliest times of the year to be in Rome.
-                            Until 2018, we had the "Free Sunday", in which state-run museums were free for everyone
-                            on the first Sunday of the month.This is no longer the case, exactly.
-                            Now, there is a "Culture Week", which took place March 5-10, 2019.
-                            From April - September inclusive, there has NOT been a Free Sunday. They resume on the
-                            first Sunday of October, which in 2019 is October 6. So this month, you are in luck!
-                        </p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
@@ -112,37 +99,33 @@
         </div>
     </section>
 
-
-
-    <div class="container">
-        <div class="card-group">
-
-            <!--bootstrap card with 3 vertical images-->
-            <div class="row">
-                <div class="card col-md-4">
-                    <img class="card-img-top"
-                        src="https://images.unsplash.com/photo-1559815997-527653909224?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+    <section>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/photo-1559815997-527653909224.jpeg">
 
                     <div class="card-body">
                         <h3 class="card-title">Compare</h3>
                         <p class="card-text">JavaScript | Python</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="card col-md-4">
-                    <img class="card-img-top"
-                        src="https://images.unsplash.com/photo-1559221498-14881115c728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/photo-1559221498-14881115c728.jpeg">
 
                     <div class="card-body">
                         <h3 class="card-title text-primary">Placement</h3>
                         <p class="card-text">Sudo Placement Course</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="card col-md-4">
-                    <img class="card-img-top"
-                        src="https://images.unsplash.com/photo-1522741938106-d7bce0d1af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/photo-1522741938106-d7bce0d1af09.jpeg">
                     <div class="card-body">
                         <h3 class="card-title">DSA</h3>
                         <p class="card-text">DS & Algo Course</p>
@@ -150,46 +133,73 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-12">
+                <a class="btn btn-light float-right" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    See More...
+                </a>
+            </div>
+        </div>
+    </section>
+
+
 
     <footer>
-        <div class="social">
-            <img class=instagram
-                src="https://www.pinclipart.com/picdir/middle/158-1580825_instagram-icon-free-instagram-logo-black-clipart.png"
-                alt="instagram" height="60" width="60">
-            <img class=facebook src="https://image.flaticon.com/icons/png/512/33/33702.png" alt="facebook" height="50"
-                width="50">
-            <img class=tripadvisor
-                src="https://imageog.flaticon.com/icons/png/512/48/48942.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
-                alt="tripadvisor" height="60" width="100">
-        </div>
+        <section>
+            <div class="row">
+                <div class="col-9 col-md-7 text-left linkedin">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/ana-raquel-marques-85162679/" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Raquel
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/inesqtribeiro" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Inês
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/angelinariet/" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Angelina
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-5">
+                    <div class="text-right">
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram" style="font-size:45px;"></i>
+                            </a>
+                        </div>
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f" style="font-size:42px;"></i>
+                            </a>
+                        </div>
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-tripadvisor" style="font-size:50px;"></i>
+                            </a>
 
-        <div class="girls">
-            <a class="footer" href="https://www.linkedin.com/in/angelinariet/" target="_blank">Angelina Riet <img
-                    class=linkedin src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="linkedin"
-                    height="50" width="50"></a>
-
-            <a class="footer" href="https://www.linkedin.com/in/inesqtribeiro" target="_blank">Inês Ribeiro <img
-                    class=linkedin src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="linkedin"
-                    height="50" width="50"></a>
-
-            <a class="footer" href="https://www.linkedin.com/in/ana-raquel-marques-85162679/" target="_blank">Raquel
-                Marques <img class=linkedin src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="linkedin"
-                    height="50" width="50"></a>
-        </div>
-
+                        </div>
+                    </div>
+                </div>
+        </section>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
 
 </html>
