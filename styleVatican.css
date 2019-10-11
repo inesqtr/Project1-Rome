@@ -1,53 +1,7 @@
 body {
-    width: 100%;
-    background-color: #FFF7D6;
     margin: none;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Chivo',cursive;
     font-size: 1em;
-}
-
-/*navigation bar*/
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: #160808;
-    color: white;
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    height: 60px;
-    opacity: 0.8;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    font-family: 'Open Sans Condensed', sans-serif !important;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-header li {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-}
-
-header ul:hover {
-    opacity: 1;
-}
-
-li .nav:hover {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-header li .nav, header li .nav:hover {
-    color: #FFF;
 }
 
 /*Main Heading*/
@@ -62,6 +16,7 @@ header li .nav, header li .nav:hover {
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
+    width:100%;
 }
 
 .subtitleAttractions {
@@ -81,13 +36,15 @@ header li .nav, header li .nav:hover {
     margin-right: 90px;
 }
 
+
+
 /*Headings styling*/
 
 h2 {
-    font-family: 'Bitter', serif;
-    font-size: 30px;
+    font-family: 'Chivo', cursive;
     font-weight: bold;
     color: #8A2000;
+    margin-top: 100px;
 }
 
 h3 {
@@ -95,36 +52,45 @@ h3 {
     font-weight: bold;
     text-decoration: none;
     font-family: 'Chivo', cursive;
-    font-size: 1.4em;
 }
 
-/*General sections styling*/
 
-section {
-    display: block;
-    margin: 100px auto;
-    width: 75%;
+section{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
 }
 
-.history, ol {
-    display: block;
+/*History section*/
+
+#historySection {
+    display: flex;
+    flex-flow:column;
+    flex-wrap:wrap;
+}
+
+.history {
+    display: flex;
     text-align: justify;
     padding-top: 30px;
 }
 
 /*Top Attractions Section*/
 
-#topAttractions {
+
+
+.topAttractions{
     display: flex;
+    padding-top:30px;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 50px auto;
+    margin:auto;
+    flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 .attraction {
     height: 550px;
-    width: 350px;
+    max-width: min-content;
     text-align: center;
     border-radius: 10px;
     box-shadow: 3px 0px 12px #160808;
@@ -133,6 +99,7 @@ section {
     transition: transform .3s cubic-bezier(.26, .8, .91, .91);
     overflow: hidden;
 }
+
 
 .attraction:hover .image {
     transform: scale(1.2);
@@ -166,24 +133,60 @@ a:hover {
 
 /*Curiosities Section*/
 
-#curiosities {
-    padding: 20px;
+.flexCuriosities{
+    display: flex;
+    padding-bottom:100px;
+    padding-top: 30px;
 }
 
 .interrogationImg {
-    height: 300px;
-    width: 300px;
-    margin-top: 125px;
-    margin-left: 15px;
-    float: left;
+    width: 50%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
 }
 
-#curiosities .curiositiesList {
-    display: block;
-    margin-left: 400px;
-    margin-top: 50px;
+.interrogationImg img{
+    width: 70%;
 }
 
-#curiosities li {
+#curiositiesSection li {
     padding: 5px 0;
+}
+
+@media (max-width:800px){
+    .flexCuriosities {
+        flex-wrap: wrap;
+    }
+
+    .interrogationImg{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:414px){
+    .attraction {
+        margin: 30px auto;
+        height: 600px;
+        background-color: #1d1d0d;
+    }
+}
+
+@media (max-width:768px){
+    .attraction {
+        padding: 30px auto;
+    }
+}
+
+@media (max-width:1024px){
+    .attraction {
+        padding: 30px auto;
+    }
+}
+
+@media (max-width:640px){
+    .titleAttractions {
+        font-size:3em;
+    }
 }
