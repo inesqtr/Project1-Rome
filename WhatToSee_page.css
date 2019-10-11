@@ -171,11 +171,10 @@ footer .linkedin a {
 
 
 @media (max-width:768px) {
- 
-  .container {
-    width: 90%;
-  }
 
+  section{
+    width:auto;
+  }
 
   [class*="col-"] {
     width: auto;
