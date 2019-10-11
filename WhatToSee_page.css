@@ -1,5 +1,5 @@
 .container {
-  width: 75%;
+  width: 1200px;
   margin: none;
 }
 header li {
@@ -110,7 +110,7 @@ select {
   padding-bottom: 5px;
   padding-top:5px;
 }
-
+/*
 .thumb {
   margin-bottom: 20px;
 }
@@ -133,8 +133,16 @@ img{
   box-shadow: 3px 0px 12px #160808;
 }
 
-/*END photo*/
+*END photo*/
 
+img{
+  border-radius: 10px 10px 0 0;
+  box-shadow: 3px 0px 12px #160808;
+}
+
+.thumb {
+  margin-bottom: 35px;
+}
 .video-title h3{
   color:black;
   font-family: 'Open Sans Condensed', sans-serif !important;
@@ -189,10 +197,11 @@ footer .row{
 
 
 @media (max-width:768px) {
-  body{
-    font-size: 14px;
-    width:100%;
+ 
+  .container {
+    width: 90%;
   }
+
 
   [class*="col-"] {
     width: auto;
@@ -200,13 +209,6 @@ footer .row{
     height: auto !important;
     font-size:14px;
 } 
-.video iframe,
-.video object,
-.video embed {
-  width: auto !important;
-  height: auto!important;
-  
-}
 
 nav a{
   font-size:10px;    
@@ -215,14 +217,24 @@ nav ul {
   width:100%;
 }
 
-.container {
-  width: 90%;
-  margin: none;
-}
-
 h1 {
   font-size: 2em;
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  width: auto !important;
+  height: auto!important;
+}
+.scroll_down {
+  padding-bottom: 20px;
+  padding-top:30px;
+}
+.video-title h3{
+  padding-top: 50px;
+  padding-bottom:20px;
 }
 }
