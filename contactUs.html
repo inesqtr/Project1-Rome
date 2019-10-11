@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/commons.css" type="text/css" rel="stylesheet">
     <link href="styleContactUs.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo%7CMartel&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 
@@ -18,40 +20,82 @@
     <header>
         <nav>
             <ul>
-                <li><a class="nav" href="index.html" target="_blank">Home</a></li>
-                <li><a class="nav" href="WhatToSee_page.html" target="_blank">What to see</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Where to stay</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Where to eat</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Events</a></li>
-                <li><a class="nav" href="contactUs.html" target="_blank">Contact us</a></li>
+                <li class="nav text-center"><a href="index.html">Home</a></li>
+                <li class="nav text-center"><a href="WhatToSee_page.html">What to see</a></li>
+                <li class="nav text-center"><a href="contactUs.html">Where to stay</a></li>
+                <li class="nav text-center"><a href="contactUs.html">Where to eat</a></li>
+                <li class="nav text-center"><a href="contactUs.html">Events</a></li>
+                <li class="nav text-center"><a class="active" href="contactUs.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
+
     <section>
         <h1>Contact us</h1>
-        <div>
+        <div class="allForm">
             <form action="mailto:contact@lavieenrome.com" method="post" enctype="text/plain">
                 <label for="nameLabel">Name</label>
                 <br />
-                <input type="text" name="yourName" value="" id="nameLabel" placeholder="Enter your name" />
+                <input type="text" name="yourName" value="" id="nameLabel" placeholder="Enter your name" required/>
                 <br />
                 <label for="emailLabel">Email</label>
                 <br />
-                <input type="email" name="yourEmail" value="" id="emailLabel" placeholder="youremail@email.com" />
+                <input type="email" name="yourEmail" value="" id="emailLabel" placeholder="youremail@email.com" required />
                 <br />
                 <label for="messageLabel">Message</label>
                 <br />
-                <textarea name="yourMessage" rows="3" cols="60" placeholder="Write your message here."></textarea>
+                <textarea name="yourMessage" rows="3" cols="60" placeholder="Write your message here." required></textarea>
                 <br />
-                <div class="giphy"><img id="myImage"></div>
                 <p id="sent"></p>
                 <button id="submitButton" type="submit" onclick='teste()'>Submit</button>
             </form>
+            <div><img id="myImage"></div>
         </div>
     </section>
 
     <footer>
+        <section>
+            <div class="row">
+                <div class="col-9 col-md-7 text-left linkedin">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/ana-raquel-marques-85162679/" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Raquel
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/inesqtribeiro" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Inês
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.linkedin.com/in/angelinariet/" target="_blank">
+                                <i class="fab fa-linkedin-in" style="font-size:50px"></i>&nbsp;Angelina
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-5">
+                    <div class="text-right">
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram" style="font-size:45px;"></i>
+                            </a>
+                        </div>
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f" style="font-size:42px;"></i>
+                            </a>
+                        </div>
+                        <div class="social-container">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-tripadvisor" style="font-size:50px;"></i>
+                            </a>
 
+                        </div>
+                    </div>
+                </div>
+        </section>
     </footer>
 
     <!--Button function for giphy-->
