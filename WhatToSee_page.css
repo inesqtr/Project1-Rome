@@ -110,30 +110,6 @@ select {
   padding-bottom: 5px;
   padding-top:5px;
 }
-/*
-.thumb {
-  margin-bottom: 20px;
-}
-.thumb:hover {
-  opacity: 0.5;
-}
-
-.page-top {
-  margin-top: 85px;
-}
-
-img.zoom {
-    width: 100%;
-    height: 300px;
-    object-fit:cover;
-}
-
-img{
-  border-radius: 10px 10px 0 0;
-  box-shadow: 3px 0px 12px #160808;
-}
-
-*END photo*/
 
 img{
   border-radius: 10px 10px 0 0;
@@ -185,13 +161,14 @@ footer .linkedin a {
 }
 
 footer .social-container {
-  width: 40px;
+  width: 50px;
+  text-align: center;
+  display:inline-block;
 }
 
 footer .row{
-  margin-left: 30px;
-  margin-right:45px;
-  margin-top: 5px;
+  margin-left: 50px;
+  margin-right:120px;
 }
 /*----- END FOOTER -----*/
 
